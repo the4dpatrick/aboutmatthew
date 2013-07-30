@@ -28,17 +28,18 @@ span {
 	margin: 0 auto;
 }
 .name p {
+	font-family: Verdana, Tahoma;
 	color: white;
 	font-size: 1em;
 	padding-bottom: 30px;
 	padding-left: 85px;
 }
 h1 {
-	font-family: Yellowtail, sans serif;
+	font-family: 'Yellowtail', cursive;
 	position: relative;
 	color: white;
 	font-size: 5em;	
-	margin-left: 100px;;
+	margin-left: 10px;
 	padding-bottom: 30px;
 }
 
@@ -60,7 +61,7 @@ h1 {
 	max-width: 100%;
 }
 .container .name .social div{
-	width:  90px;
+	width:  80px;
 	display: inline-block;
 }
 .container .name .social img{
@@ -70,7 +71,9 @@ h1 {
 .social {
 	position: absolute;
 	display: inline;
-	margin-left: 20px;
+	width: 425px;
+	left: 0;
+	margin-left: 10px;
 }
 	
 	
