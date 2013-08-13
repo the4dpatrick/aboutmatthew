@@ -168,7 +168,7 @@ Max-width 600px CSS
 	    z-index: 999;
 	    text-shadow: 3px 1px 5px #2980b9;
 		padding-bottom: 19px;
-	    width: 413px;
+	    width: 414px;
 	    margin: -72px auto 0 auto;
 		position: relative;
 		
@@ -180,7 +180,7 @@ Max-width 600px CSS
 	    position: relative;
 		display: block;
 	}
-	.social div {
+	.name .social div {
 		width: 16.6666667%;
 	}
 	.social img {
@@ -221,7 +221,7 @@ Max-width 450px CSS
 @media (max-width: 450px) {
 	h1 {
 	    font-size: 4em;
-	    width: 329px;
+	    width: 333px;
 	    margin-left: auto;
 	    margin-top: -57px;
 	    padding-bottom: 20px;
