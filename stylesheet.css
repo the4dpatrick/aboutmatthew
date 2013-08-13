@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Yellowtail);
 @font-face {
 	font-family:"Yellowtail";
-	src:url("/fonts/Yellowtail-Regular.eot?") format("eot"),
+	src:url("/foYellowtail-Regular.eot?") format("eot"),
 	url("/fonts/Yellowtail-Regular.woff") format("woff"),
 	url("/fonts/Yellowtail-Regular.ttf") format("truetype"),
 	url("/fonts/Yellowtail-Regular.svg#Yellowtail") format("svg");
@@ -131,7 +131,7 @@ ol li:nth-child(18) {
 /*==============================================================
 Max-width 600px CSS
 ===============================================================*/
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	#bg {
 		height: 450px;
 		overflow: hidden;
@@ -218,7 +218,7 @@ Max-width 600px CSS
 /*==============================================================
 Max-width 450px CSS
 ===============================================================*/
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 	h1 {
 	    font-size: 4em;
 	    width: 333px;
@@ -231,6 +231,7 @@ Max-width 450px CSS
 	}
 	.container .name {
 		height: 178px;
+		top: -31px;
 	}
 	.name p {
 	    line-height: 2em;
@@ -251,7 +252,7 @@ Max-width 450px CSS
 /*==============================================================
 Min-width 1200px CSS
 ===============================================================*/
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	#bg {
 		width: 533px;
 	}
