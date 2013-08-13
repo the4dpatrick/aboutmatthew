@@ -1,10 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Yellowtail);
 @font-face {
 	font-family:"Yellowtail";
-	src:url("/foYellowtail-Regular.eot?") format("eot"),
-	url("/fonts/Yellowtail-Regular.woff") format("woff"),
-	url("/fonts/Yellowtail-Regular.ttf") format("truetype"),
-	url("/fonts/Yellowtail-Regular.svg#Yellowtail") format("svg");
+	src:url("Yellowtail-Regular.eot?") format("eot"),
+	url("Yellowtail-Regular.woff") format("woff"),
+	url("Yellowtail-Regular.ttf") format("truetype"),
+	url("Yellowtail-Regular.svg#Yellowtail") format("svg");
 	font-weight:normal;font-style:normal;}
 /* Reset */
 
@@ -14,7 +14,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
 	background-color: black;
 	margin: 0;
-	min-width: 400px;
 }
 /*==============================================================
 Info Container
@@ -90,8 +89,8 @@ Background
 	margin-top: -100px;
 	margin: auto;
 	display: block;
-    min-width: 100%;
 	max-width: 100%;
+	min-height: 400px;
 }
 /*==============================================================
 Song
@@ -175,9 +174,10 @@ Max-width 600px CSS
 	}
 	.social {
 	    padding: 0;
-	    margin: 0 auto;
+		width: 424px;
 	    position: relative;
 		display: block;
+		margin: 0 auto
 	}
 	.name .social div {
 		width: 16.6666667%;
@@ -219,14 +219,15 @@ Max-width 450px CSS
 ===============================================================*/
 @media only screen and (max-width: 450px) {
 	h1 {
-	    font-size: 4em;
+	    font-size: 3em;
 	    width: 333px;
 	    margin-left: auto;
-	    margin-top: -57px;
+	    margin-top: -91px;
 	    padding-bottom: 20px;
+		text-align: center;
 	}
 	.container {
-		height: 240px;
+		height: 223px;
 	}
 	.container .name {
 		height: 178px;
@@ -235,11 +236,9 @@ Max-width 450px CSS
 	.name p {
 	    line-height: 2em;
 	}
-	.social {
-		left: 0;
-	}
+
 	.container .name .social div {
-		width: 16.6667%;
+		width: 13.6667%;
 	}
 	.container .name .social img {
 		width: 125%;
