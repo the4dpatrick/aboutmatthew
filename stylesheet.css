@@ -1,10 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Yellowtail);
 @font-face {
 	font-family:"Yellowtail";
-	src:url("Yellowtail-Regular.eot?") format("eot"),
-	url("Yellowtail-Regular.woff") format("woff"),
-	url("Yellowtail-Regular.ttf") format("truetype"),
-	url("Yellowtail-Regular.svg#Yellowtail") format("svg");
+	src:url(/"Yellowtail-Regular.eot?") format("eot"),
+	url("/Yellowtail-Regular.woff") format("woff"),
+	url("/Yellowtail-Regular.ttf") format("truetype"),
+	url("/Yellowtail-Regular.svg#Yellowtail") format("svg");
 	font-weight:normal;font-style:normal;}
 /* Reset */
 
@@ -90,7 +90,6 @@ Background
 	margin: auto;
 	display: block;
 	max-width: 100%;
-	min-height: 400px;
 }
 /*==============================================================
 Song
@@ -103,6 +102,27 @@ iframe {
 /*==============================================================
 Thumbnails
 ===============================================================*/	
+#toTop {
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,.6);
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.tri {
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	bottom: 29px;
+	right: 20px;
+	border-style: solid;
+	border-width: 0 15px 15px 15px;
+	border-color: transparent transparent #ffffff transparent;
+	border-radius: 5px;
+}
 ol {
 	width: 100%;
 }
@@ -132,7 +152,6 @@ Max-width 600px CSS
 ===============================================================*/
 @media only screen and (max-width: 600px) {
 	#bg {
-		height: 450px;
 		overflow: hidden;
 	}
 
@@ -159,7 +178,7 @@ Max-width 600px CSS
 		border-bottom: 8px solid #FFF;
 	}
 	.name p {
-		width: 276px;
+		width: 279px;
 		padding: 34px 0 13px 0;
 		margin: 0 auto;
 	}
@@ -167,20 +186,20 @@ Max-width 600px CSS
 	    z-index: 999;
 	    text-shadow: 3px 1px 5px #2980b9;
 		padding-bottom: 19px;
-	    width: 414px;
+	    width: 415px;
 	    margin: -72px auto 0 auto;
 		position: relative;
 		
 	}
 	.social {
 	    padding: 0;
-		width: 424px;
+		width: 422px;
 	    position: relative;
 		display: block;
-		margin: 0 auto
+		text-align: center;
 	}
 	.name .social div {
-		width: 16.6666667%;
+		width: 45px;
 	}
 	.social img {
 		width: 125%;
@@ -271,6 +290,12 @@ Min-width 1200px CSS
 	}
 	.social {
 		margin-left: 35px;
+	}
+	#toTop {
+		display: none;
+	}
+	.tri {
+		display: none;
 	}
 	ol {
 	    position: fixed;

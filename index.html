@@ -2,12 +2,12 @@
 	<html>
 		<head>
 			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>Matthew Perey | Filipino and proud</title>
 			<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
 			<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" type="text/css" href="stylesheet.css">
-			<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>			
+			<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 		</head>
 		<body>
 			<div id="bg">
@@ -29,7 +29,8 @@
 					</div>
 				</div>
 			</div><!-- end of container -->
-			<ol>
+			<a href="#bg"><div id="toTop"><div class="tri"></div></div></a>
+			<ol id="thumbs-container">
 				<li class="thumbs">
 					<img src="images/thumbnails/t__01.jpg" alt="">
 				</li>
@@ -87,6 +88,16 @@
 			</ol>
 			<div id="gallery"><img src="images/thumbnails/t__01.jpg" alt="">
 			</div>
-			<iframe width="0" height="0" 			src="http://www.youtube.com/embed/YEYxOPtQqWw?rel=0&autoplay=1&loop=1&start=1" frameborder="0" allowfullscreen></iframe>
+			<script type="text/javascript">
+				var container = document.getElementById("thumbs-container");
+				var gallery = document.getElementById("gallery").firstChild;
+				container.addEventListener('click', function(e) {
+				    if(e.target.src){
+				        gallery.src = e.target.src;
+				    }
+				});
+			</script>
+			<iframe width="0" height="0" 			src="http://www.youtube.com/embed/YEYxOPtQqWw?rel=0&autoplay=1&loop=1&start=1"</iframe>
+
 		</body>
 	</html>
