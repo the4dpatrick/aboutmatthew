@@ -194,6 +194,7 @@ Max-width 600px CSS
 	.social {
 	    padding: 0;
 		width: 422px;
+		margin: 0 auto;
 	    position: relative;
 		display: block;
 		text-align: center;
@@ -234,9 +235,9 @@ Max-width 600px CSS
 	
 }
 /*==============================================================
-Max-width 450px CSS
+Max-width 480px CSS
 ===============================================================*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
 	h1 {
 	    font-size: 3em;
 	    width: 333px;
@@ -255,12 +256,15 @@ Max-width 450px CSS
 	.name p {
 	    line-height: 2em;
 	}
-
+	.social {
+		margin: 0;
+		width: 397px;
+	}
 	.container .name .social div {
-		width: 13.6667%;
+		width: 56px;
 	}
 	.container .name .social img {
-		width: 125%;
+		width: 62px;
 	}
 	#gallery img {
 		display: none;
