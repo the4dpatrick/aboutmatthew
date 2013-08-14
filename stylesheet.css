@@ -1,0 +1,346 @@
+@import url(http://fonts.googleapis.com/css?family=Yellowtail);
+@font-face {
+	font-family:"Yellowtail";
+	src:url(/"Yellowtail-Regular.eot?") format("eot"),
+	url("/Yellowtail-Regular.woff") format("woff"),
+	url("/Yellowtail-Regular.ttf") format("truetype"),
+	url("/Yellowtail-Regular.svg#Yellowtail") format("svg");
+	font-weight:normal;font-style:normal;}
+/* Reset */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+body {
+	background-color: black;
+	margin: 0;
+}
+/*==============================================================
+Info Container
+===============================================================*/
+.container {
+	position: absolute;
+    top: 23px;
+    right: 500px;
+    z-index: 999;
+}
+.container .name {
+	padding: 20px;
+	background-color: rgba(0,0,0,0.5);
+	height: 250px;
+	width: 425px;
+	position: absolute;
+	z-index: 2;
+	border-radius: 10px;
+}
+span {
+	width: 425px;
+	margin: 0 auto;
+}
+.name p {
+	font-family: 'Raleway', Tahoma;
+	color: white;
+	font-size: 1.2em;
+	padding-bottom: 30px;
+	padding-left: 80px;
+	font-weight: 400;
+	margin-top: 110px;
+}
+h1 {
+	font-family: 'Yellowtail', cursive;
+	position: absolute;
+	color: white;
+	font-size: 5em;	
+	margin-left: 24px;
+	padding-bottom: 30px;
+    z-index: 999;
+    width: 423px;
+    margin-top: 21px;
+}
+.container .name .social div{
+	width:  80px;
+	display: inline-block;
+}
+.container .name .social img{
+	width: 100px;
+}
+
+.social {
+	position: absolute;
+	display: inline;
+	width: 425px;
+	left: 0;
+	margin-left: 10px;
+}
+/*==============================================================
+Background
+===============================================================*/
+#bg {
+	width:100%;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#bg img { 
+    top: 0; 
+    left: 0; 
+	margin-top: -100px;
+	margin: auto;
+	display: block;
+	max-width: 100%;
+}
+/*==============================================================
+Song
+===============================================================*/
+iframe {
+	position: absolute;
+	top: 100px;
+	left: 50%;	
+}
+/*==============================================================
+Thumbnails
+===============================================================*/	
+#toTop {
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,.6);
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.tri {
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	bottom: 29px;
+	right: 20px;
+	border-style: solid;
+	border-width: 0 15px 15px 15px;
+	border-color: transparent transparent #ffffff transparent;
+	border-radius: 5px;
+}
+ol {
+	width: 100%;
+}
+ol li:nth-child(16) {
+	display: none;
+}
+ol li:nth-child(17) {
+	display: none;
+}
+ol li:nth-child(18) {
+	display: none;
+}
+.thumbs {
+	float: left;
+	width: 20%;
+}
+.thumbs img {
+	width: 100%;
+	border-radius: 10px;
+}
+#gallery {
+	display: none;
+}
+
+/*==============================================================
+Max-width 600px CSS
+===============================================================*/
+@media only screen and (max-width: 600px) {
+	#bg {
+		overflow: hidden;
+	}
+
+	.container {
+	    float: none;
+	    display: block;
+	    margin-top: -3px;
+		height: 241px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		position: relative;
+	}
+	.container .name {
+		padding: 0;
+		background-color: #2980b9;
+		width: 100%;
+		height: 164px;
+		position: relative;
+		right: 0;
+		top: -30px;
+		border-radius: 0;
+		border-bottom: 8px solid #FFF;
+	}
+	.name p {
+		width: 279px;
+		padding: 34px 0 13px 0;
+		margin: 0 auto;
+	}
+	h1 {
+	    z-index: 999;
+	    text-shadow: 3px 1px 5px #2980b9;
+		padding-bottom: 19px;
+	    width: 415px;
+	    margin: -72px auto 0 auto;
+		position: relative;
+		
+	}
+	.social {
+	    padding: 0;
+		width: 422px;
+		margin: 0 auto;
+	    position: relative;
+		display: block;
+		text-align: center;
+	}
+	.name .social div {
+		width: 45px;
+	}
+	.social img {
+		width: 125%;
+		/*width: 100px*/
+	}
+	ol li:nth-child(16) {
+		display: block;
+	}
+	ol li:nth-child(17) {
+		display: block;
+	}
+	ol li:nth-child(18) {
+		display: block;
+	}
+	.thumbs {
+		width: 50%;
+		background: #FFF;
+	}
+	.thumbs img {
+		width: 95%;
+		margin-left: 2.5%;
+		margin-bottom: 3%;
+	}
+	iframe {
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+	#gallery img {
+		display: none;
+	}
+	
+}
+/*==============================================================
+Max-width 480px CSS
+===============================================================*/
+@media only screen and (max-width: 480px) {
+	h1 {
+	    font-size: 3em;
+	    width: 333px;
+	    margin-left: auto;
+	    margin-top: -91px;
+	    padding-bottom: 20px;
+		text-align: center;
+	}
+	.container {
+		height: 223px;
+	}
+	.container .name {
+		height: 178px;
+		top: -31px;
+	}
+	.name p {
+	    line-height: 2em;
+	}
+	.social {
+		margin: 0 auto;
+		width: 302px;
+	}
+	.container .name .social div {
+		width: 56px;
+	}
+	.container .name .social img {
+		width: 62px;
+	}
+	#gallery img {
+		display: none;
+	}
+}
+/*==============================================================
+Min-width 1200px CSS
+===============================================================*/
+@media only screen and (min-width: 1200px) {
+	#bg {
+		width: 533px;
+	}
+	.container {
+		height: auto;
+		top: 625px;
+		left: 0;
+	}
+	.container .name {
+		background-color: #2980b9;
+		width: 493px;
+		border-radius: 0;
+	}
+	h1 {
+		margin-left: 48px;
+		width: 423px;
+		margin-top: 21px;	
+	}
+	.social {
+		margin-left: 35px;
+	}
+	#toTop {
+		display: none;
+	}
+	.tri {
+		display: none;
+	}
+	ol {
+	    position: fixed;
+		display: block;
+		left: 534px;
+		top: 0;
+		width: auto;
+	}
+	ol li:nth-child(16) {
+		display: block;
+	}
+	ol li:nth-child(17) {
+		display: block;
+	}
+	ol li:nth-child(18) {
+		display: block;
+	}
+	.thumbs {
+		float: left;
+		width: 11.1%;
+		opacity: .5;
+		transition: opacity 0.2s;
+	}
+	.thumbs:hover {
+		width: 11.1%;
+		opacity: 1;
+		cursor: pointer;
+	}
+	#gallery {
+		display: block;
+		width: 600px;
+		margin-left: 533px;
+	}
+	#gallery img {
+		
+	    margin: 0 auto;
+	    width: 25%;
+	    position: absolute;
+	    left: 52%;
+	    top: 35%;
+	    overflow: hidden;
+
+	}
+}
