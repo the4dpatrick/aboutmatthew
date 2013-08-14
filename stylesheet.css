@@ -257,8 +257,8 @@ Max-width 480px CSS
 	    line-height: 2em;
 	}
 	.social {
-		margin: 0;
-		width: 397px;
+		margin: 0 auto;
+		width: 302px;
 	}
 	.container .name .social div {
 		width: 56px;
