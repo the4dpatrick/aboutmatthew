@@ -1,4 +1,5 @@
 About Matthew
 =============
 An about me page inspired by about.me.
-Bottom of page is a gallery of photos that brightens up once hovered over.
+Responsive design at max-widths of 480px, 600px, and 1200px.
+A photo gallery was incorporated by using vanilla JavaScrip twithout a library.
